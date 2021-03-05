@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>HME Covid Check-in</title>
+    <meta name="description" content="4166 Web Based Dev" />
+    <meta charset="utf-8" />
+	 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header class="banner">
+<h1><a href="index.html"><img src="hme.png" alt="logo" /></a>HME Covid Check-in </h1>
+
+<div id="user">
+<ul>
+<li>Start a new connection </li> 
+<li><a href="savedConnections.html">Login</a></li>
+<li><a href="savedConnections.html">Sign up</a></li>
+</ul>
+</div>
+	</header>
+	
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="connections.html">Connections</a></li>
+		<li><a href="connection.html">Details</a></li>
+		<li><a href="savedConnections.html" class="active">Saved Connections</a></li>
+		</ul>
+	
+	</nav>
+
+<main>
+<p>User's Connections</p>
+
+<table>
+<tr>
+<th>Connection</th>
+<th>Category</th>
+<th>Going?</th>
+<th></th>
+</tr>
+
+<tr>
+<td>616 Vaccine Distribution</td>
+<td>Security Training</td>
+<td>Yes</td>
+<td> <form action="connection.html" method="POST">
+       <input type="submit" value="Update" class="btns"/>
+	   </form>
+	   <form action="savedConnections.html" method="POST">
+       <input type="submit" value="Delete" class="btns" />
+	   </form>
+      </td>
+</tr>
+
+
+<tr>
+<td>102 How to take a test</td>
+<td>Information Session</td>
+<td>Maybe</td>
+
+<td> <form action="connection.html" method="POST">
+       <input type="submit" value="Update" class="btns"/>
+	   </form>
+	   <form action="savedConnections.html" method="POST">
+       <input type="submit" value="Delete" class="btns"/>
+	   </form>
+      </td>
+
+</tr>
+
+</table>
+
+</main>
+
+
+<footer>
+<p><small>&copy; Copyright 2021 HME </small></p>
+
+<a href="http://html5.validator.nu/">Validate</a>
+</footer>
+
+</body>
+</html>
